@@ -7,50 +7,8 @@
 #define SCROLL 5
 #define NUM 6
 
-&mt {
-    quick-tap-ms = <0>;
-    tapping-term-ms = <160>;
-    flavor = "balanced";
-};
-
-&lt {
-    flavor = "balanced";
-    tapping-term-ms = <160>;
-    quick-tap-ms = <0>;
-};
-
 / {
-    combos {
-        compatible = "zmk,combos";
-
-        to_bluetooth {
-            bindings = <&mo 0>;
-            key-positions = <0 29>;
-            layers = <0>;
-        };
-    };
-
-    macros {
-        esc_lang2: esc_lang2 {
-            compatible = "zmk,behavior-macro";
-            #binding-cells = <0>;
-            bindings = <&macro_tap>, <&kp ESCAPE &kp LANG2>;
-
-            label = "ESC_LANG2";
-        };
-    };
-
-    behaviors {
-        esc_lang2_with_layer: esc_lang2_with_layer {
-            compatible = "zmk,behavior-hold-tap";
-            label = "ESC_LANG2_WITH_LAYER";
-            bindings = <&mo>, <&esc_lang2>;
-
-            #binding-cells = <2>;
-            tapping-term-ms = <160>;
-            flavor = "balanced";
-        };
-    };
+    combos { compatible = "zmk,combos"; };
 
     keymap {
         compatible = "zmk,keymap";
