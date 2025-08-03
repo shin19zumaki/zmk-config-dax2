@@ -51,10 +51,10 @@
 
         layer_2 {
             bindings = <
-&kp LA(LC(HOME))  &none              &none              &kp LS(LC(LG(N3)))  &kp LS(LC(LG(N4)))  &kp LS(LG(N5))     &none  &kp LA(LC(LG(U)))  &none  &none  &none  &none
-&trans            &kp LA(LC(LG(A)))  &kp LA(LC(LG(S)))  &none               &kp LA(LC(LG(F)))   &none              &none  &none              &none  &none  &none  &trans
-&trans            &none              &none              &kp LA(LC(LG(C)))   &none               &none              &M01   &M02               &none  &none  &none  &trans
-                  &trans             &trans             &kp LA(LC(LEFT))    &none               &kp LA(LC(RIGHT))  &none  &none
+&none   &none   &none              &kp LS(LC(LG(N3)))  &kp LS(LC(LG(N4)))  &kp LS(LG(N5))  &M01   &M02   &none             &none              &none  &none
+&trans  &none   &kp LA(LC(LG(S)))  &none               &kp LA(LC(LG(F)))   &none           &none  &none  &none             &none              &none  &trans
+&trans  &none   &none              &kp LA(LC(LG(C)))   &none               &none           &none  &none  &kp LA(LC(LEFT))  &kp LA(LC(RIGHT))  &none  &trans
+        &trans  &trans             &none               &none               &none           &none  &none
             >;
         };
 
@@ -87,10 +87,10 @@
 
         layer_6 {
             bindings = <
-&none  &bt BT_SEL 0  &bt BT_SEL 1  &bt BT_SEL 2  &bt BT_SEL 3  &bt BT_SEL 4  &none  &none  &none  &none  &none  &none
-&none  &none         &none         &none         &none         &none         &none  &none  &none  &none  &none  &none
-&none  &none         &none         &none         &none         &none         &none  &none  &none  &none  &none  &none
-       &none         &none         &none         &none         &none         &none  &none
+&none  &bt BT_SEL 0       &bt BT_SEL 1  &bt BT_SEL 2  &bt BT_SEL 3  &bt BT_SEL 4  &none  &kp LA(LC(LG(U)))  &none  &none  &none  &none
+&none  &kp LA(LC(LG(A)))  &none         &none         &none         &none         &none  &none              &none  &none  &none  &none
+&none  &none              &none         &none         &none         &none         &none  &none              &none  &none  &none  &none
+       &none              &none         &none         &none         &none         &none  &kp LA(LC(HOME))
             >;
         };
     };
